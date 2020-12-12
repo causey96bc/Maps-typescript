@@ -14,4 +14,8 @@ export class Company{
       lng: parseFloat(faker.address.latitude()),
     }
   }
+  markerContent(): string {
+    return `company name: ${this.companyName}
+            Catchphrase: ${this.catchPhrase}`
+  }
 }
