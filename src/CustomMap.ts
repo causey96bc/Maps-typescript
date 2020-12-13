@@ -3,11 +3,12 @@ import {Company} from "./Company";
  
 //instruction to every other class 
 //on how to be an argument to add marker.
-interface Mappable{
+export interface Mappable{
   location: {
     lat: number,
     lng: number,
   }
+  color: string
   markerContent(): string;
  }
 export class CustomMap {
